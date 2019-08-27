@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+   <!--生产环境版本，优化了尺寸和速度 -->
+  <!--<script src="https://cdn.jsdelivr.net/npm/vue"></script>-->
+  <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <div id="theMsg">{{msg}}</div>
+    {{msg}}
+    <ul>
+      <todo-item v-for="(item, index) in list" :item="item" :key="index"></todo-item>
+    </ul>
+
+    <input type="text" @keyup="onInput($event)">
+  </div>
+</body>
+</html>
+
+<script>
+Vue.component('todo-item', {
+  template: `
+<div>
+
+<li><span>{{item.title}}</span> : <span>{{item.text}}</span></li>
+
+  <ul>
+  <li v-for="(o, i) in list2" :key="i" v-if="o % 2 === 0">{{o}}</li>
+</ul>
+<div >
+</div>
+
+</div>
+`,
+  props: ['item']
+})
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    msg: 'vue',
+    list: [{title: 'Beijing', text: 'Beijing welcome u'}, {title: 'HK', text: 'A part of GD China'}],
+    list2: [1,2,3,4,5,6,7,8]
+  },
+  beforeCreate (a, b, c) {
+    // console.log('... before create ...', this.$el, this.$data, this.$data, a, b, c)
+  },
+  created (a,b,c) {
+    // console.log('... created ...', this.$el, this.$data, this.$data.list, a, b, c)
+  },
+  beforeMount(a,b,c) {
+    // console.log('... before mount ...', this.$el, this.$data, this.$data.list, a, b, c)
+  },
+  mounted (a,b,c) {
+    // console.log('... mounted ...', this.$el, this.$data, this.$data.list, a, b, c)
+    window.setTimeout(() => {
+      this.$data.msg = 'world'
+    }, 3000)
+  },
+  beforeUpdate (a, b, c) {
+    console.log('... beforeUpdate ...', this.$el.innerText, this.$data.msg)
+  },
+  updated (a, b, c) {
+    console.log('... updated ...', this.$el.innerText, this.$data.msg)
+  },
+  beforeDestroy (a, b) {
+    this.$data.msg = 'aji'
+    console.log('... before destroy ...', this.$el.innerText, this.$data.msg)
+  },
+  destroyed (a, b) {
+    console.log('... destroyed...', this.$el.innerText, this.$data.msg)
+  },
+  methods: {
+    onInput (evt) {
+      console.log(evt)
+    }
+  }
+})
+</script>
