@@ -11,13 +11,31 @@
 </head>
 <body>
   <div id="app">
-    <div id="theMsg">{{msg}}</div>
-    {{msg}}
-    <ul>
-      <todo-item v-for="(item, index) in list" :item="item" :key="index"></todo-item>
-    </ul>
-
-    <input type="text" @keyup="onInput($event)">
+    <div> <input type="text" v-model="val1" @input="onInputInput()">(val1: 'string') </div>
+    <div> <input type="checkbox" v-model="val2" @change="onCheckoutBoxChange">(val2: true/false) </div>
+    <div>
+      <input type="checkbox" v-model="val3" value="A">A
+      <input type="checkbox" v-model="val3" value="B">B
+      <input type="checkbox" v-model="val3" value="C">C
+    </div>(val3: [A, B, C])
+    <div>
+      <input type="radio" value="A" v-model="val4">A
+      <input type="radio" value="B" v-model="val4">B
+    </div>(val4: 'A'/'B')
+    <div>
+      <select name="" id="" v-model="val5">
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+      </select>(val5: 'A'/'B'/'C')
+    </div>
+    <div>
+      <select name="" v-model="val6" multiple>
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+      </select>(val6: ['A', 'B', 'C'])
+    </div>
   </div>
 </body>
 </html>
@@ -39,46 +57,80 @@ Vue.component('todo-item', {
 `,
   props: ['item']
 })
+</script>
 
+<script>
 var app = new Vue({
   el: '#app',
   data: {
-    msg: 'vue',
-    list: [{title: 'Beijing', text: 'Beijing welcome u'}, {title: 'HK', text: 'A part of GD China'}],
-    list2: [1,2,3,4,5,6,7,8]
-  },
-  beforeCreate (a, b, c) {
-    // console.log('... before create ...', this.$el, this.$data, this.$data, a, b, c)
+    val1: '111',
+    val2: false,
+    val3: [],
+    val4: '',
+    val5: '',
+    val6: [],
   },
   created (a,b,c) {
-    // console.log('... created ...', this.$el, this.$data, this.$data.list, a, b, c)
-  },
-  beforeMount(a,b,c) {
-    // console.log('... before mount ...', this.$el, this.$data, this.$data.list, a, b, c)
   },
   mounted (a,b,c) {
-    // console.log('... mounted ...', this.$el, this.$data, this.$data.list, a, b, c)
-    window.setTimeout(() => {
-      this.$data.msg = 'world'
-    }, 3000)
   },
-  beforeUpdate (a, b, c) {
-    console.log('... beforeUpdate ...', this.$el.innerText, this.$data.msg)
-  },
-  updated (a, b, c) {
-    console.log('... updated ...', this.$el.innerText, this.$data.msg)
-  },
-  beforeDestroy (a, b) {
-    this.$data.msg = 'aji'
-    console.log('... before destroy ...', this.$el.innerText, this.$data.msg)
-  },
-  destroyed (a, b) {
-    console.log('... destroyed...', this.$el.innerText, this.$data.msg)
+  watch: {
+    val3 (newV, oldV) {
+      console.log(this.val3)
+    },
+    val4 (newV, oldV) {
+      console.log(this.val4)
+    },
+    val5 (newV, oldV) {
+      console.log(this.val5)
+    },
+    val6 (newV, oldV) {
+      console.log(this.val6)
+    },
   },
   methods: {
+    onInputInput () {
+      console.log(this.val1)
+    },
+    onCheckoutBoxChange () {
+      console.log(this.val2)
+    },
     onInput (evt) {
       console.log(evt)
     }
   }
+})
+</script>
+
+<script>
+Vue.component('blog-post', {
+  template: '<div>' +
+  '<h3>{{title}}</h3><p>{{content}}</p>' +
+  '<button @click="haveRead">Have Read</button>'+
+  '</div>',
+  props: ['title', 'content'],      // 外部使用传入的 数据
+  data () {                         // data 一般存放于外部无关的响应数据
+    return {
+      date: (new Date()).getTime(),
+      read: false,
+    }
+  },
+  methods: {
+    haveRead () {
+      this.read = !this.read
+      this.$emit('onHaveRead', this.read)
+    }
+  }
+})
+
+new Vue({
+  el: '#el',
+  template:
+    `
+<div>
+  props 的传递可以使用数据绑定的形式进行传递（这样会适时刷新），也可以使用普通Dom属性传递（once传递）
+  <blog-post :title="title" :content="content"></blog-post>
+</div>
+    `
 })
 </script>

@@ -175,7 +175,9 @@ vue add @vue/eslint --config airbnb --lintOn save
 
 
 #### 使用 `vue.cli@2x` 的模板
+
 * `vue-cli`使用着同一个库，如果想使用之前的 `vue init` 功能，可安装全局的
+
 ```bash
 npm install -g @vue/cli-init
 # vue init now works exactly the same as vue-cli@2.x
