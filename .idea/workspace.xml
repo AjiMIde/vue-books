@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fcdb288e-49e8-460e-b59e-cbb038b78efd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/30.vue-cli-3.x/0.vue_cli.md" beforeDir="false" afterPath="$PROJECT_DIR$/30.vue-cli-3.x/0.vue_cli.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/30.vue-cli-3.x/1.vue-cli-install-use.md" beforeDir="false" afterPath="$PROJECT_DIR$/30.vue-cli-3.x/1.create-and-use.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/30.vue-cli-3.x/command.md" beforeDir="false" afterPath="$PROJECT_DIR$/30.vue-cli-3.x/command.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SUMMARY.md" beforeDir="false" afterPath="$PROJECT_DIR$/SUMMARY.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/index1.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo/index1.html" afterDir="false" />
-    </list>
+    <list default="true" id="fcdb288e-49e8-460e-b59e-cbb038b78efd" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -27,36 +20,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="0.vue_cli.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/30.vue-cli-3.x/0.vue_cli.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="859">
-                <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="component.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1.vue-advanced/component.md">
+      <file leaf-file-name="component-provide-inject.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/1.vue-advanced/component-provide-inject.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="434">
-                <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="component-slot.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/1.vue-advanced/component-slot.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="744">
-                <caret line="176" column="2" selection-start-line="176" selection-start-column="2" selection-end-line="176" selection-end-column="2" />
+              <first_editor relative-caret-position="704">
+                <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
               </first_editor>
               <second_editor />
             </state>
@@ -117,6 +86,7 @@
         <option value="$PROJECT_DIR$/1.vue-advanced/1.animation-transition.md" />
         <option value="$PROJECT_DIR$/50.blog/20190403-vuecli3-init-project.md" />
         <option value="$PROJECT_DIR$/1.vue-advanced/component-slot.md" />
+        <option value="$PROJECT_DIR$/1.vue-advanced/component-provide-inject.md" />
       </list>
     </option>
   </component>
@@ -143,7 +113,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -154,12 +123,13 @@
             <path>
               <item name="vue-books" type="b2602c69:ProjectViewProjectNode" />
               <item name="vue-books" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="1.vue-advanced" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -171,15 +141,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="H:\GitHub\vue-books\20.vue-cli-2.x" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="H:\GitHub\vue-books\1.vue-advanced" />
       <recent name="H:\GitHub\vue-books\50.blog" />
       <recent name="H:\GitHub\vue-books\40.project-init" />
       <recent name="H:\GitHub\vue-books\assets" />
       <recent name="H:\GitHub\vue-books\0.vue-basic" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="H:\GitHub\vue-books\20.vue-cli-2.x" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -237,11 +207,12 @@
       <workItem from="1572837300174" duration="1631000" />
       <workItem from="1572919659854" duration="5439000" />
       <workItem from="1574062540185" duration="6163000" />
+      <workItem from="1574230546678" duration="1315000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136291000" />
+    <option name="totallyTimeSpent" value="137606000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -287,16 +258,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/VueRouter2.x/guards.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="62">
-            <caret line="2" selection-start-line="2" selection-end-line="2" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SUMMARY--.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -725,11 +686,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/30.vue-cli-3.x/0.vue_cli.md">
+    <entry file="file://$PROJECT_DIR$/1.vue-advanced/component-slot.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="859">
-            <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="735">
+            <caret line="176" column="2" selection-start-line="176" selection-start-column="2" selection-end-line="176" selection-end-column="2" />
           </first_editor>
           <second_editor />
         </state>
@@ -745,11 +706,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1.vue-advanced/component-slot.md">
+    <entry file="file://$PROJECT_DIR$/30.vue-cli-3.x/0.vue_cli.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="735">
+            <caret line="48" selection-start-line="48" selection-end-line="48" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.vue-advanced/component-provide-inject.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="744">
-            <caret line="176" column="2" selection-start-line="176" selection-start-column="2" selection-end-line="176" selection-end-column="2" />
+          <first_editor relative-caret-position="704">
+            <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
           </first_editor>
           <second_editor />
         </state>
