@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>index2</title>
+  <!--生产环境版本，优化了尺寸和速度 -->
+  <!--<script src="https://cdn.jsdelivr.net/npm/vue"></script>-->
+  <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+
+</body>
+<script>
+var vm = new Vue({
+  data: {
+    name: 'luobo',
+    age: 18
+  }
+})
+
+var userInfo = function () {
+  return this.name + ' - ' + this.age
+}
+
+var onUserInfoChange = function (userInfo) {
+  console.log(userInfo)
+}
+
+vm.$watch(userInfo, onUserInfoChange)
+
+</script>
+</html>

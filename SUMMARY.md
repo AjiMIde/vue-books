@@ -29,4 +29,12 @@
   * [7.整合后台框架](20.vue-cli-2.x/7.Integrating-with-Backend-Framework.md)
   * [8.开发环境中使用API代理](20.vue-cli-2.x/8.API-Proxying-During-Development.md)
   
-  
+* Vue 高阶 
+    * [](./1.vue-advanced/)
+    * [组件使用](1.vue-advanced/1.0.component.md)
+    * [组件 provide&inject 使用](1.vue-advanced/1.1.component-provide-inject.md)
+    * [组件 slot 使用](1.vue-advanced/1.2.component-slot.md)
+    * [Vue使用插件（自定义插件](1.vue-advanced/2.vue-plugin.md)
+ 
+ * Vue 原理 
+    
