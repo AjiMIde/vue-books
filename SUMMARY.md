@@ -35,6 +35,8 @@
     * [组件 provide&inject 使用](1.vue-advanced/1.1.component-provide-inject.md)
     * [组件 slot 使用](1.vue-advanced/1.2.component-slot.md)
     * [Vue使用插件（自定义插件](1.vue-advanced/2.vue-plugin.md)
+* Vue 相关代码    
+    * [0.统一处理http请求的通用代码](./6.Code/0.http-normal-code.md)
  
  * Vue 原理 
     
