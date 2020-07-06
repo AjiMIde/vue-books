@@ -13,11 +13,16 @@
   * [Vue 事件](./0.vue-basic/7.vue-event.md)
   * [Vue 表单](./0.vue-basic/8.vue-form.md)
   
-* Vue 答疑
-  * [babel Polyfill 解决一些兼容问题](10.vue-question/1.babelPolyfill.md)
-  * [Browser list 解决低端浏览器兼容](10.vue-question/2.Browserlist.md)
-
-* vue-cli-2.x 版本
+  
+* Vue 高阶 
+    * [](./1.vue-advanced/)
+    * [组件使用](1.vue-advanced/1.0.component.md)
+    * [组件 provide&inject 使用](1.vue-advanced/1.1.component-provide-inject.md)
+    * [组件 slot 使用](1.vue-advanced/1.2.component-slot.md)
+    * [Vue使用插件（自定义插件](1.vue-advanced/2.vue-plugin.md)
+  
+  
+* vue-cli-2.x 
   * [vue-cli基础知识](./20.vue-cli-2.x/0.vue-cli-basic.md)
   * [vue-cli webpack-模板](./20.vue-cli-2.x/0.1webpack-template.md)
   * [1.项目结构](20.vue-cli-2.x/1.Project-Structure.md)
@@ -29,15 +34,24 @@
   * [7.整合后台框架](20.vue-cli-2.x/7.Integrating-with-Backend-Framework.md)
   * [8.开发环境中使用API代理](20.vue-cli-2.x/8.API-Proxying-During-Development.md)
   
-* Vue 高阶 
-    * [](./1.vue-advanced/)
-    * [组件使用](1.vue-advanced/1.0.component.md)
-    * [组件 provide&inject 使用](1.vue-advanced/1.1.component-provide-inject.md)
-    * [组件 slot 使用](1.vue-advanced/1.2.component-slot.md)
-    * [Vue使用插件（自定义插件](1.vue-advanced/2.vue-plugin.md)
+  
+* Vue-Router路由  
+  * [vue-router](./VueRouter2.x/_vueRouter2.x.md)
+  * [1.安装与使用](./VueRouter2.x/1.install_usage.md)
+  * [2.相关属性与函数](./VueRouter2.x/2.property_and_function.md)
+  * [3.导航守卫](./VueRouter2.x/3.guards.md)
+  * [4.相关使用经验](./VueRouter2.x/4.experience.md)
+
+* Vue 答疑
+  * [babel Polyfill 解决一些兼容问题](10.vue-question/1.babelPolyfill.md)
+  * [Browser list 解决低端浏览器兼容](10.vue-question/2.Browserlist.md)
+  
+
+
     
 * Vue 相关代码    
     * [0.统一处理http请求的通用代码](./6.Code/0.http-normal-code.md)
+
  
  * Vue 原理 
     

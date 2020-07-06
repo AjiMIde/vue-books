@@ -51,6 +51,6 @@
 
 * [Vue-Router2.x](./VueRouter2.x/_vueRouter2.x.md)
 
-  * [安装与使用](./VueRouter2.x/install_usage.md)
-  * [路由的属性与函数方法](./VueRouter2.x/property_and_function.md)
-  * [guards](./VueRouter2.x/guards.md)   
+  * [安装与使用](VueRouter2.x/1.install_usage.md)
+  * [路由的属性与函数方法](VueRouter2.x/2.property_and_function.md)
+  * [guards](VueRouter2.x/3.guards.md)   
