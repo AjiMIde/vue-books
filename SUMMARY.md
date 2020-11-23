@@ -53,7 +53,8 @@
   
 * Vue Blog博客  
   * [1.从零初使化一个Vue项目](./Blog/1.build-vue-project-from-0.md)
-  * [Vue3.cli初使化Vue项目](./Blog/20190403-vuecli3-init-project.md)
+  * [2.Vue3.cli初使化Vue项目](./Blog/20190403-vuecli3-init-project.md)
+  * [3.vue.cli cmd命令配置](./Blog/20200405-vue-cmd 命令在cmd-windows-powershell中使用.md)
 
 
 * Vue 相关代码    
