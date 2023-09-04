@@ -3,9 +3,6 @@
 * [Introduction](README.md)
 
 * Vue 基础
-  * [Vue 基础](./0.vue-basic/0.vue-basic.md)
-  * [Vue 初使化](./0.vue-basic/1.vue-init.md)
-  * [Vue 模板插值](./0.vue-basic/2.vue-template-interpolation.md)
   * [Vue 计算与监听](./0.vue-basic/3.vue-computed-watch.md)
   * [Vue class类与style样式](./0.vue-basic/4.vue-class-style.md)
   * [Vue 条件使用](./0.vue-basic/5.vue-condition.md)
@@ -35,7 +32,7 @@
   * [8.开发环境中使用API代理](20.vue-cli-2.x/8.API-Proxying-During-Development.md)
   
 * Vue-cli-3.x  
-  * [0.Vue-Cli-3.x基础知识](./30.vue-cli-3.x/0.vue_cli.md)
+  * [0.Vue-Cli-3.x基础知识](./vue-cli-3.x/0.vue_cli.md)
   * [1.创建项目与使用](./30.vue-cli-3.x/1.create-and-use.md)
   * [2.命令]
   
@@ -53,6 +50,7 @@
   
 * Vue Blog博客  
   * [1.从零初使化一个Vue项目](./Blog/1.build-vue-project-from-0.md)
+  * [2.从零初使化一个Vue项目(新2022)](./Blog/2.build-vue-project-from-0-2022.md)
   * [2.Vue3.cli初使化Vue项目](./Blog/20190403-vuecli3-init-project.md)
   * [3.vue.cli cmd命令配置](./Blog/20200405-vue-cmd 命令在cmd-windows-powershell中使用.md)
 
